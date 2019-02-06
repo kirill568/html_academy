@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta charset="keywords" content="Кваст, кваст, квас, крафтовый квас">
+    <meta name="description" content="Лучший крафтовый квас от htmlacademy!">
+    <link rel="icon" href="favicon.jpg">
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>Кваст</title>
   </head>
@@ -11,10 +14,10 @@
 		<div class="header-top clearfix">
 			<img class="header-logo" src="img/logo.png" alt="Кваст">
 			<ul class="main-nav">
-				<li><a href="#">История</a></li>
-				<li><a href="#">Производство</a></li>
-				<li><a href="#">Ассортимент</a></li>
-				<li><a href="#">Где купить</a></li>
+				<li><a href="#history">История</a></li>
+				<li><a href="#production">Производство</a></li>
+				<li><a href="#stock">Ассортимент</a></li>
+				<li><a href="#buy">Где купить</a></li>
 			</ul>
 		</div>
 		<div class="header-promo">
@@ -93,7 +96,7 @@
 	</div>
 </div>
 
-<div class="features">
+<div id="production" class="features">
 	<div class="container">
 		<ul class="features-list clearfix">
 			<li class="features-items pic-1">
@@ -114,7 +117,7 @@
 	</div>
 </div>
 
-<div class="some-history">
+<div id="history" class="some-history">
 	<div class="container">
 		<h2 class="section-title">Немного истории</h2>
 		<dl class="articles">
@@ -153,12 +156,12 @@
 			Сегодня мы провели дегустацию чего-то действительно новенького — крафтового кваса. Да, да, вы не ослышались! Спасибо Арсену и Руслану за то, что предоставили целую бочку своего напитка!
 			</p>
 			<cite class="author">Газета столичный Стольник</cite>
-			<a class="btn" href="#">Читать далее</a>
+			<a class="btn btn-read-more" href="#">Читать далее</a>
 		</blockquote>
 	</div>
 </div>
 
-<div class="product-price">
+<div id="stock" class="product-price">
 	<div class="container">
 		<h2 class="section-title">Ассортимент</h2>
 		<table class="product-list">
@@ -201,13 +204,13 @@
 	</div>
 </div>
 
-<div class="order">
+<div id="buy" class="order">
 	<div class="container">
 		<h2 class="section-title">Заказать</h2>
 		<p class="appeal">
 			Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.
 		</p>
-		<form class="form-order" action="#" method="get">
+		<form class="form-order" action="#" method="post">
 			<div class="order-item">
 				<label class="label-title" for="fullname">Представьтесь:</label>
 				<input type="text" name="fullname" id="fullname" placeholder="Как мы можем к вам обращаться?">
@@ -250,10 +253,10 @@
 		<div class="footer-top header-top clearfix">
 			<img class="footer-logo header-logo"src="img/logo.png">
 			<ul class="main-nav main-footer">
-				<li><a href="#">История</a></li>
-				<li><a href="#">Производство</a></li>
-				<li><a href="#">Ассортимент</a></li>
-				<li><a href="#">Где купить</a></li>
+				<li><a href="#history">История</a></li>
+				<li><a href="#production">Производство</a></li>
+				<li><a href="#stock">Ассортимент</a></li>
+				<li><a href="#buy">Где купить</a></li>
 			</ul>
 		</div>
 
@@ -268,7 +271,7 @@
 			</div>
 			<div class="developer">
 				<img src="img/htmlacademy.png">
-				<b>Разработчик: <a href="#">HTML Academy</a></b>
+				<b>Разработчик: <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>, feat <a class="git" href="https://github.com/kirill568" target="_blank"></a></b>
 			</div>	
 		</div>
 	</div>
