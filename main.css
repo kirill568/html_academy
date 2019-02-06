@@ -71,10 +71,13 @@ body {
 }
 
 .header-promo {
+	position: relative;
+	min-height: 200px;
 	margin-top: 125px;
 }
 
 .header-title {
+	display: none;
 	width: 100%;
 	font-size: 65px;
 	font-weight: bold;
@@ -86,8 +89,46 @@ body {
 	border-bottom: 2px solid rgba(255, 255, 255, 0.5)
 }
 
+.radio-button {
+	visibility: hidden;
+	margin-right: 20px;
+}
+
 .main-nav a:active {
 	color: #dddddd;
+}
+
+.label-slide {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	width: 10px;
+	height: 10px;
+	background-color: rgba(129, 129, 129, 1);
+}
+
+.label-slide::before {
+	content: '';
+	display: none;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+}
+
+.kvass-radio:checked ~ .kvass, 
+.kvass-radio:checked +  .label-slide::before {
+	display: block;
+}
+
+.js-radio:checked ~ .js, 
+.js-radio:checked + .label-slide::before {
+	display: block;
+}
+
+.css-radio:checked ~ .css,
+.css-radio:checked + .label-slide::before {
+	display: block;
 }
 
 .section-title {
